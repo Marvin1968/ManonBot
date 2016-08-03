@@ -300,6 +300,8 @@ class WebhookHandler(webapp2.RequestHandler):
         elif 'pokemon' in text:
         	reply('Ik speel ook Pokemon Go, kijk maar!')
         	reply(img=urllib2.urlopen('http://blogs-images.forbes.com/insertcoin/files/2016/07/hit-squad.jpg').read())
+        elif 'joshua5' in text:
+        	reply('Shall we play a game?')
 
 app = webapp2.WSGIApplication([
     ('/me', MeHandler),
